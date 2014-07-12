@@ -48,12 +48,11 @@ int attr displayOptions 0x7f010028
 int attr divider 0x7f01002e
 int attr dividerHorizontal 0x7f01001b
 int attr dividerPadding 0x7f010056
-int attr dividerThickness 0x7f01006e
 int attr dividerVertical 0x7f01001a
 int attr dropDownListViewStyle 0x7f010021
 int attr dropdownListPreferredItemHeight 0x7f010048
 int attr expandActivityOverflowButtonDrawable 0x7f01006b
-int attr fa_icon 0x7f010070
+int attr fa_icon 0x7f01006e
 int attr height 0x7f010026
 int attr homeAsUpIndicator 0x7f010013
 int attr homeLayout 0x7f010033
@@ -99,7 +98,7 @@ int attr showDividers 0x7f010055
 int attr spinnerDropDownItemStyle 0x7f010058
 int attr spinnerMode 0x7f010052
 int attr spinnerStyle 0x7f010057
-int attr stroke_icon 0x7f010071
+int attr stroke_icon 0x7f01006f
 int attr subtitle 0x7f010029
 int attr subtitleTextStyle 0x7f01002b
 int attr textAllCaps 0x7f01006d
@@ -112,7 +111,6 @@ int attr textAppearanceSmallPopupMenu 0x7f010015
 int attr textColorSearchUrl 0x7f010068
 int attr title 0x7f010025
 int attr titleTextStyle 0x7f01002a
-int attr ttf_name 0x7f01006f
 int attr windowActionBar 0x7f010000
 int attr windowActionBarOverlay 0x7f010001
 int attr windowFixedHeightMajor 0x7f010006
@@ -126,7 +124,6 @@ int bool abc_config_actionMenuItemAllCaps 0x7f060005
 int bool abc_config_allowActionMenuItemTextWithIcon 0x7f060004
 int bool abc_config_showMenuShortcutsWhenKeyboardPresent 0x7f060003
 int bool abc_split_action_bar_is_narrow 0x7f060002
-int bool fragment_transition_animation_enabled 0x7f060006
 int color abc_search_url_text_holo 0x7f070004
 int color abc_search_url_text_normal 0x7f070000
 int color abc_search_url_text_pressed 0x7f070002
@@ -260,13 +257,11 @@ int id action_context_bar 0x7f050238
 int id action_menu_divider 0x7f050016
 int id action_menu_presenter 0x7f050017
 int id action_mode_close_button 0x7f05023f
-int id action_settings 0x7f050260
+int id action_settings 0x7f05025d
 int id activity_chooser_view_content 0x7f050240
 int id always 0x7f05000b
-int id app_progress 0x7f05025c
 int id beginning 0x7f050011
 int id checkbox 0x7f050248
-int id child_fragment_container 0x7f05025d
 int id collapseActionView 0x7f05000d
 int id container 0x7f050257
 int id default_activity_button 0x7f050243
@@ -646,12 +641,12 @@ int id fa_xing_square 0x7f050160
 int id fa_youtube 0x7f05015e
 int id fa_youtube_play 0x7f050161
 int id fa_youtube_square 0x7f05015d
-int id fragment_container 0x7f05025e
+int id fragment_container 0x7f05025b
 int id home 0x7f050014
 int id homeAsUp 0x7f050005
 int id icon 0x7f050245
 int id icon_container 0x7f050258
-int id icon_font 0x7f05025f
+int id icon_font 0x7f05025c
 int id ifRoom 0x7f05000a
 int id image 0x7f050242
 int id listMode 0x7f050001
@@ -833,7 +828,6 @@ int id pe_7s_way 0x7f050190
 int id pe_7s_world 0x7f050196
 int id pe_7s_wristwatch 0x7f050194
 int id progress_circular 0x7f050018
-int id progress_container 0x7f05025b
 int id progress_horizontal 0x7f050019
 int id radio 0x7f05024a
 int id search_badge 0x7f05024d
@@ -886,12 +880,10 @@ int layout abc_simple_decor 0x7f030017
 int layout activity_main 0x7f030018
 int layout fragment_icon_grid 0x7f030019
 int layout fragment_pager 0x7f03001a
-int layout lab_dialog_progress 0x7f03001b
-int layout lab_fragment_section 0x7f03001c
-int layout lab_main 0x7f03001d
-int layout support_simple_spinner_dropdown_item 0x7f03001e
-int layout view_font_awesome 0x7f03001f
-int layout view_font_stroke 0x7f030020
+int layout lab_main 0x7f03001b
+int layout support_simple_spinner_dropdown_item 0x7f03001c
+int layout view_font_awesome 0x7f03001d
+int layout view_font_stroke 0x7f03001e
 int menu main 0x7f0d0000
 int string abc_action_bar_home_description 0x7f0a0001
 int string abc_action_bar_up_description 0x7f0a0002
@@ -906,12 +898,12 @@ int string abc_searchview_description_submit 0x7f0a0007
 int string abc_searchview_description_voice 0x7f0a0008
 int string abc_shareactionprovider_share_with 0x7f0a000c
 int string abc_shareactionprovider_share_with_application 0x7f0a000b
-int string action_settings 0x7f0a0012
+int string action_settings 0x7f0a000f
 int string actionbar_github 0x7f0a0010
 int string app_name 0x7f0a000d
-int string hello_world 0x7f0a0011
-int string icon_page_title_font_awesome 0x7f0a000e
-int string icon_page_title_stroke 0x7f0a000f
+int string hello_world 0x7f0a000e
+int string icon_page_title_font_awesome 0x7f0a0011
+int string icon_page_title_stroke 0x7f0a0012
 int style AppBaseTheme 0x7f0b008b
 int style AppTheme 0x7f0b008c
 int style TextAppearance_AppCompat_Base_CompactMenu_Dialog 0x7f0b0063
@@ -1097,17 +1089,14 @@ int styleable ActivityChooserView_expandActivityOverflowButtonDrawable 1
 int styleable ActivityChooserView_initialActivityCount 0
 int[] styleable CompatTextView { 0x7f01006d }
 int styleable CompatTextView_textAllCaps 0
-int[] styleable IconViewFontAwesome { 0x7f010070 }
+int[] styleable IconViewFontAwesome { 0x7f01006e }
 int styleable IconViewFontAwesome_fa_icon 0
-int[] styleable IconViewStroke { 0x7f010071 }
+int[] styleable IconViewStroke { 0x7f01006f }
 int styleable IconViewStroke_stroke_icon 0
 int[] styleable LinearLayoutICS { 0x7f01002e, 0x7f010055, 0x7f010056 }
 int styleable LinearLayoutICS_divider 0
 int styleable LinearLayoutICS_dividerPadding 2
 int styleable LinearLayoutICS_showDividers 1
-int[] styleable LinearListView { 0x010100b2, 0x7f01006e }
-int styleable LinearListView_android_entries 0
-int styleable LinearListView_dividerThickness 1
 int[] styleable MenuGroup { 0x0101000e, 0x010100d0, 0x01010194, 0x010101de, 0x010101df, 0x010101e0 }
 int styleable MenuGroup_android_checkableBehavior 5
 int styleable MenuGroup_android_enabled 0
@@ -1159,8 +1148,6 @@ int styleable Spinner_disableChildrenWhenDisabled 9
 int styleable Spinner_popupPromptView 8
 int styleable Spinner_prompt 6
 int styleable Spinner_spinnerMode 7
-int[] styleable TextViewCustomFont { 0x7f01006f }
-int styleable TextViewCustomFont_ttf_name 0
 int[] styleable Theme { 0x7f010047, 0x7f010048, 0x7f010049, 0x7f01004a, 0x7f01004b, 0x7f01004c }
 int styleable Theme_actionDropDownStyle 0
 int styleable Theme_dropdownListPreferredItemHeight 1

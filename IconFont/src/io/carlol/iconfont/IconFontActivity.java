@@ -1,11 +1,10 @@
 package io.carlol.iconfont;
 
+import io.carlol.iconfont.base.BaseActivity;
+import io.carlol.iconfont.base.BaseFragment;
 import io.carlol.iconfont.fragment.FontAwesomeFragment;
 import io.carlol.iconfont.fragment.FontStrokeFragment;
 import io.carlol.iconfont.fragment.PagerFragment;
-import it.open.androidlab.activity.base.BaseActivity;
-import it.open.androidlab.fragment.base.BaseFragment;
-import it.open.androidlab.util.Utils;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -81,7 +80,6 @@ public class IconFontActivity extends BaseActivity {
 		} 
 
 		if (frag == null) {
-			Utils.debug(TAG, "can't switchToSection if sectionId doesn't match!");
 			return; // EXIT
 		}
 

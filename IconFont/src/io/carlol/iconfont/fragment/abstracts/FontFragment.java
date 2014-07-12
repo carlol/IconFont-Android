@@ -1,7 +1,7 @@
 package io.carlol.iconfont.fragment.abstracts;
 
 import io.carlol.iconfont.R;
-import it.open.androidlab.fragment.base.BaseSimpleFragment;
+import io.carlol.iconfont.base.BaseSimpleFragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;

@@ -291,16 +291,6 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int dividerPadding=0x7f010056;
-        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int dividerThickness=0x7f01006e;
         /**  A drawable that may be used as a vertical divider between visual elements. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -709,7 +699,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>fa_plus_square_o</code></td><td>368</td><td></td></tr>
 </table>
          */
-        public static final int fa_icon=0x7f010070;
+        public static final int fa_icon=0x7f01006e;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -1249,7 +1239,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>pe_7s_airplay</code></td><td>169</td><td></td></tr>
 </table>
          */
-        public static final int stroke_icon=0x7f010071;
+        public static final int stroke_icon=0x7f01006f;
         /**  Specifies subtitle text used for navigationMode="normal" 
          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
@@ -1320,14 +1310,6 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int titleTextStyle=0x7f01002a;
-        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int ttf_name=0x7f01006f;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -1435,7 +1417,6 @@ containing a value of this type.
         public static final int abc_config_allowActionMenuItemTextWithIcon=0x7f060004;
         public static final int abc_config_showMenuShortcutsWhenKeyboardPresent=0x7f060003;
         public static final int abc_split_action_bar_is_narrow=0x7f060002;
-        public static final int fragment_transition_animation_enabled=0x7f060006;
     }
     public static final class color {
         public static final int abc_search_url_text_holo=0x7f070004;
@@ -1678,13 +1659,11 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f05023f;
-        public static final int action_settings=0x7f050260;
+        public static final int action_settings=0x7f05025d;
         public static final int activity_chooser_view_content=0x7f050240;
         public static final int always=0x7f05000b;
-        public static final int app_progress=0x7f05025c;
         public static final int beginning=0x7f050011;
         public static final int checkbox=0x7f050248;
-        public static final int child_fragment_container=0x7f05025d;
         public static final int collapseActionView=0x7f05000d;
         public static final int container=0x7f050257;
         public static final int default_activity_button=0x7f050243;
@@ -2064,12 +2043,12 @@ containing a value of this type.
         public static final int fa_youtube=0x7f05015e;
         public static final int fa_youtube_play=0x7f050161;
         public static final int fa_youtube_square=0x7f05015d;
-        public static final int fragment_container=0x7f05025e;
+        public static final int fragment_container=0x7f05025b;
         public static final int home=0x7f050014;
         public static final int homeAsUp=0x7f050005;
         public static final int icon=0x7f050245;
         public static final int icon_container=0x7f050258;
-        public static final int icon_font=0x7f05025f;
+        public static final int icon_font=0x7f05025c;
         public static final int ifRoom=0x7f05000a;
         public static final int image=0x7f050242;
         public static final int listMode=0x7f050001;
@@ -2251,7 +2230,6 @@ containing a value of this type.
         public static final int pe_7s_world=0x7f050196;
         public static final int pe_7s_wristwatch=0x7f050194;
         public static final int progress_circular=0x7f050018;
-        public static final int progress_container=0x7f05025b;
         public static final int progress_horizontal=0x7f050019;
         public static final int radio=0x7f05024a;
         public static final int search_badge=0x7f05024d;
@@ -2330,12 +2308,10 @@ containing a value of this type.
         public static final int activity_main=0x7f030018;
         public static final int fragment_icon_grid=0x7f030019;
         public static final int fragment_pager=0x7f03001a;
-        public static final int lab_dialog_progress=0x7f03001b;
-        public static final int lab_fragment_section=0x7f03001c;
-        public static final int lab_main=0x7f03001d;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001e;
-        public static final int view_font_awesome=0x7f03001f;
-        public static final int view_font_stroke=0x7f030020;
+        public static final int lab_main=0x7f03001b;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001c;
+        public static final int view_font_awesome=0x7f03001d;
+        public static final int view_font_stroke=0x7f03001e;
     }
     public static final class menu {
         public static final int main=0x7f0d0000;
@@ -2381,12 +2357,12 @@ containing a value of this type.
         /**  Description of a share target (both in the list of such or the default share button) in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] 
          */
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000b;
-        public static final int action_settings=0x7f0a0012;
+        public static final int action_settings=0x7f0a000f;
         public static final int actionbar_github=0x7f0a0010;
         public static final int app_name=0x7f0a000d;
-        public static final int hello_world=0x7f0a0011;
-        public static final int icon_page_title_font_awesome=0x7f0a000e;
-        public static final int icon_page_title_stroke=0x7f0a000f;
+        public static final int hello_world=0x7f0a000e;
+        public static final int icon_page_title_font_awesome=0x7f0a0011;
+        public static final int icon_page_title_stroke=0x7f0a0012;
     }
     public static final class style {
         /** 
@@ -2409,31 +2385,9 @@ containing a value of this type.
         res/values-v11/styles.xml on API 14+ devices.
     
  API 14 theme customizations can go here. 
-
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
-
-        Base application theme for API 11+. This theme completely replaces
-        AppBaseTheme from res/values/styles.xml on API 11+ devices.
-    
- API 11 theme customizations can go here. 
-
-        Base application theme for API 14+. This theme completely replaces
-        AppBaseTheme from BOTH res/values/styles.xml and
-        res/values-v11/styles.xml on API 14+ devices.
-    
- API 14 theme customizations can go here. 
          */
         public static final int AppBaseTheme=0x7f0b008b;
         /**  Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
- Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f0b008c;
@@ -3365,7 +3319,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            @see #IconViewFontAwesome_fa_icon
          */
         public static final int[] IconViewFontAwesome = {
-            0x7f010070
+            0x7f01006e
         };
         /**
           <p>This symbol is the offset where the {@link io.carlol.iconfont.R.attr#fa_icon}
@@ -3762,7 +3716,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            @see #IconViewStroke_stroke_icon
          */
         public static final int[] IconViewStroke = {
-            0x7f010071
+            0x7f01006f
         };
         /**
           <p>This symbol is the offset where the {@link io.carlol.iconfont.R.attr#stroke_icon}
@@ -4017,43 +3971,6 @@ containing a value of this type.
           @attr name android:showDividers
         */
         public static final int LinearLayoutICS_showDividers = 1;
-        /** Attributes that can be used with a LinearListView.
-           <p>Includes the following attributes:</p>
-           <table>
-           <colgroup align="left" />
-           <colgroup align="left" />
-           <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #LinearListView_android_entries io.carlol.iconfont:android_entries}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearListView_dividerThickness io.carlol.iconfont:dividerThickness}</code></td><td></td></tr>
-           </table>
-           @see #LinearListView_android_entries
-           @see #LinearListView_dividerThickness
-         */
-        public static final int[] LinearListView = {
-            0x010100b2, 0x7f01006e
-        };
-        /**
-          <p>This symbol is the offset where the {@link io.carlol.iconfont.R.attr#android_entries}
-          attribute's value can be found in the {@link #LinearListView} array.
-          @attr name android:android_entries
-        */
-        public static final int LinearListView_android_entries = 0;
-        /**
-          <p>This symbol is the offset where the {@link io.carlol.iconfont.R.attr#dividerThickness}
-          attribute's value can be found in the {@link #LinearListView} array.
-
-
-          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name android:dividerThickness
-        */
-        public static final int LinearListView_dividerThickness = 1;
         /**  Base attributes that are available to all groups. 
            <p>Includes the following attributes:</p>
            <table>
@@ -4695,33 +4612,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name android:spinnerMode
         */
         public static final int Spinner_spinnerMode = 7;
-        /** Attributes that can be used with a TextViewCustomFont.
-           <p>Includes the following attributes:</p>
-           <table>
-           <colgroup align="left" />
-           <colgroup align="left" />
-           <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #TextViewCustomFont_ttf_name io.carlol.iconfont:ttf_name}</code></td><td></td></tr>
-           </table>
-           @see #TextViewCustomFont_ttf_name
-         */
-        public static final int[] TextViewCustomFont = {
-            0x7f01006f
-        };
-        /**
-          <p>This symbol is the offset where the {@link io.carlol.iconfont.R.attr#ttf_name}
-          attribute's value can be found in the {@link #TextViewCustomFont} array.
-
-
-          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name android:ttf_name
-        */
-        public static final int TextViewCustomFont_ttf_name = 0;
         /**  These are the standard attributes that make up a complete theme. 
            <p>Includes the following attributes:</p>
            <table>

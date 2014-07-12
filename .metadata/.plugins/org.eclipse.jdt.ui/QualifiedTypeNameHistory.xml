@@ -33,4 +33,5 @@
 <fullyQualifiedTypeName name="android.widget.TextView"/>
 <fullyQualifiedTypeName name="io.carlol.iconfont.R.id"/>
 <fullyQualifiedTypeName name="io.carlol.iconfont.R.string"/>
+<fullyQualifiedTypeName name="android.support.v7.appcompat.R"/>
 </qualifiedTypeNameHistroy>

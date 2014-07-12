@@ -1,7 +1,7 @@
 package io.carlol.iconfont.fragment;
 
 import io.carlol.iconfont.R;
-import it.open.androidlab.fragment.base.BaseSimpleFragment;
+import io.carlol.iconfont.base.BaseSimpleFragment;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
