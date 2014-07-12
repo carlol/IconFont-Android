@@ -3,6 +3,8 @@ IconFont-Android
 
 Android modular implementation of font-based icons.
 
+**@see** sample app: [Play Store][1]
+
 ###[XML]
 
     <io.carlol.iconfont.ui.IconViewFontAwesome
@@ -42,3 +44,6 @@ Android modular implementation of font-based icons.
 
 
 => TODO: incomplete doc
+
+
+  [1]: https://play.google.com/store/apps/details?id=io.carlol.iconfont
