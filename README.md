@@ -16,7 +16,7 @@ Android modular implementation of font-based icons.
 
 -
 
-     <io.carlol.mtgu.mobile.ui.IconViewStroke
+     <io.carlol.iconfont.ui.IconViewStroke
         xmlns:custom="http://schemas.android.com/apk/res-auto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
