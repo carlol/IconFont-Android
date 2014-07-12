@@ -1,0 +1,14 @@
+1402245119630	Rename type 'MainActivity'
+1402245524070	Move compilation unit
+1402246687680	Delete element
+1402246898428	Rename resource 'fragment_main.xml'
+1402246910457	Delete element
+1402247430830	Rename field 'iconContainer'
+1402248259031	Rename type 'IconGridAdapter'
+1402248979316	Delete element
+1402249321779	Copy compilation unit
+1402249351451	Copy file
+1402266718113	Rename type 'ScreenSlidePagerAdapter'
+1402266961886	Rename type 'IconPagePagerAdapter'
+1402267082003	Rename type 'FragmentPager'
+1402268431378	Rename field 'icon_font_default_color'
