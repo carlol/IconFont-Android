@@ -34,10 +34,10 @@ Android modular implementation of font-based icons.
 
 -
 	
-		IconViewStroke iconAF = new IconViewStroke(this, null);
-		iconAF.setIcon(R.id.pe_7s_like);
-		iconAF.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 26);
-		iconAF.setTextColor(Color.parseColor("#FF333333"));
+		IconViewStroke iconSF = new IconViewStroke(this, null);
+		iconSF.setIcon(R.id.pe_7s_like);
+		iconSF.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 26);
+		iconSF.setTextColor(Color.parseColor("#FF333333"));
 
 
 
