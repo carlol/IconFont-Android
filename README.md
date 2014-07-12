@@ -29,14 +29,14 @@ Android modular implementation of font-based icons.
 ###[Programmatically]
 
 
-		IconViewFontAwesome iconAF = new IconViewFontAwesome(this, null);
+		IconViewFontAwesome iconAF = new IconViewFontAwesome(this/*activity*/, null);
 		iconAF.setIcon(R.id.fa_music);
 		iconAF.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 26);
 		iconAF.setTextColor(Color.parseColor("#FF333333"));
 
 -
 	
-		IconViewStroke iconSF = new IconViewStroke(this, null);
+		IconViewStroke iconSF = new IconViewStroke(this/*activity*/, null);
 		iconSF.setIcon(R.id.pe_7s_like);
 		iconSF.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 26);
 		iconSF.setTextColor(Color.parseColor("#FF333333"));
