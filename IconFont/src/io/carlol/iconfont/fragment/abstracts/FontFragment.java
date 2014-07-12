@@ -27,7 +27,7 @@ public abstract class FontFragment extends BaseSimpleFragment {
 		mContentView = inflater.inflate(R.layout.fragment_icon_grid, null);
 
 		mIconContainer = (GridView) mContentView.findViewById(R.id.icon_container);
-
+		
 		return mContentView;
 	}
 
