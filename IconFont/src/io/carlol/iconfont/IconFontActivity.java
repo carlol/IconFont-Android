@@ -2,11 +2,15 @@ package io.carlol.iconfont;
 
 import io.carlol.iconfont.base.BaseActivity;
 import io.carlol.iconfont.base.BaseFragment;
+import io.carlol.iconfont.constants.C;
 import io.carlol.iconfont.fragment.FontAwesomeFragment;
 import io.carlol.iconfont.fragment.FontStrokeFragment;
 import io.carlol.iconfont.fragment.PagerFragment;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
@@ -32,13 +36,11 @@ public class IconFontActivity extends BaseActivity {
 		int titleId = getResources().getIdentifier("action_bar_title", "id", "android");
 		TextView titleTextView = (TextView) this.getActionBarView().findViewById(titleId);
 		
-//		titleTextView.setTextSize(R.dimen.actionbar_title_text_size);
-		
 		titleTextView.setPadding(
 				getResources().getDimensionPixelSize(R.dimen.actionbar_margin_left)
-				, 0 //titleTextView.getPaddingTop()
-				, 0 //titleTextView.getPaddingRight()
-				, 0 //titleTextView.getPaddingBottom()
+				, 0 
+				, 0 
+				, 0 
 				);
 	}
 
@@ -49,19 +51,21 @@ public class IconFontActivity extends BaseActivity {
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
-//
-//	@Override
-//	public boolean onOptionsItemSelected(MenuItem item) {
-//		// Handle action bar item clicks here. The action bar will
-//		// automatically handle clicks on the Home/Up button, so long
-//		// as you specify a parent activity in AndroidManifest.xml.
-//		int id = item.getItemId();
-//		if (id == R.id.action_settings) {
-//			return true;
-//		}
-//		return super.onOptionsItemSelected(item);
-//	}
 
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		int id = item.getItemId();
+		
+		if (id == R.id.action_github) {
+			
+			Intent i = new Intent(Intent.ACTION_VIEW);
+			i.setData(Uri.parse(C.URL_GITHUB));
+			startActivity(i);
+			
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
 
 	@Override
 	public void switchToSection(String sectionId, Object... args) {
