@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<io.carlol.iconfont.ui.IconViewFontAwesome xmlns:android="http://schemas.android.com/apk/res/android"
+<io.carlol.iconfont.lib.ui.IconViewFontAwesome xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/icon_font"
     android:layout_width="match_parent"
     android:layout_height="match_parent"

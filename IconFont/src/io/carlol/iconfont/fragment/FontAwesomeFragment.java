@@ -23,7 +23,7 @@ public class FontAwesomeFragment extends FontFragment {
 	}
 
 	@Override
-	protected int getIconLayoytResourceId() {
+	protected int getIconLayoutResourceId() {
 		return R.layout.view_font_awesome;
 	}
 

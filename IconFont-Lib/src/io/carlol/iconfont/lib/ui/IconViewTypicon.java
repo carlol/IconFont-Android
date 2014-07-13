@@ -1,7 +1,7 @@
-package io.carlol.iconfont.ui;
+package io.carlol.iconfont.lib.ui;
 
 import io.carlol.iconfont.R;
-import io.carlol.iconfont.ui.abstracts.AbstractIconView;
+import io.carlol.iconfont.lib.ui.abstracts.AbstractIconView;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
@@ -12,45 +12,45 @@ import android.util.AttributeSet;
  * @author c.luchessa
  *
  */
-public class IconViewStroke extends AbstractIconView {
+public class IconViewTypicon extends AbstractIconView {
 
 	private static Typeface mFont;
 	
-	public IconViewStroke(Context context, AttributeSet attrs) {
+	public IconViewTypicon(Context context, AttributeSet attrs) {
 		super(context, attrs);
 	}
 	
 	@Override
 	public Typeface getTypeface(Context context) {
         if (mFont == null) {
-            mFont = Typeface.createFromAsset(context.getAssets(), "Pe-icon-7-stroke.ttf");
+            mFont = Typeface.createFromAsset(context.getAssets(), this.getFontResName());
         }
         return mFont;
     }
 
 	@Override
 	protected int getFirstIconResId() {
-		return R.id.pe_7s_cloud_upload;
+		return R.id.typcn_adjust_brightness;
 	}
 
 	@Override
 	protected int getStringArrayResId() {
-		return R.array.stroke_icons;
+		return R.array.typeicon_icons;
 	}
 
 	@Override
 	protected int[] getStyleableResIds() {
-		return R.styleable.IconViewStroke;
+		return R.styleable.IconViewTypicon;
 	}
 
 	@Override
 	protected int getIconAttributeResId() {
-		return R.styleable.IconViewStroke_stroke_icon;
+		return R.styleable.IconViewTypicon_typicon_icon;
 	}
 
 	@Override
 	protected String getFontResName() {
-		return "Pe-icon-7-stroke.ttf";
+		return "typicons.ttf";
 	}
 
 }

@@ -1,4 +1,4 @@
-package io.carlol.iconfont.ui.abstracts;
+package io.carlol.iconfont.lib.ui.abstracts;
 
 
 import android.content.Context;

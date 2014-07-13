@@ -1,7 +1,7 @@
-package io.carlol.iconfont.ui;
+package io.carlol.iconfont.lib.ui;
 
 import io.carlol.iconfont.R;
-import io.carlol.iconfont.ui.abstracts.AbstractIconView;
+import io.carlol.iconfont.lib.ui.abstracts.AbstractIconView;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
@@ -23,7 +23,7 @@ public class IconViewFontAwesome extends AbstractIconView {
 	@Override
 	public Typeface getTypeface(Context context) {
         if (mFont == null) {
-            mFont = Typeface.createFromAsset(context.getAssets(), "fontawesome-webfont.ttf");
+            mFont = Typeface.createFromAsset(context.getAssets(), this.getFontResName());
         }
         return mFont;
     }

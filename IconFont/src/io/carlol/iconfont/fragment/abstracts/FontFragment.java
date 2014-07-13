@@ -38,7 +38,7 @@ public abstract class FontFragment extends BaseSimpleFragment {
 
 		mIconContainer.setAdapter( ArrayAdapter.createFromResource(getActivity()
 				, this.getIconStringArrayResourceId()
-				, this.getIconLayoytResourceId()
+				, this.getIconLayoutResourceId()
 				));
 		
 		mIconContainer.setOnItemClickListener(new OnItemClickListener() {
@@ -53,5 +53,5 @@ public abstract class FontFragment extends BaseSimpleFragment {
 	protected abstract int getIconStringArrayResourceId();
 	
 	
-	protected abstract int getIconLayoytResourceId();
+	protected abstract int getIconLayoutResourceId();
 }

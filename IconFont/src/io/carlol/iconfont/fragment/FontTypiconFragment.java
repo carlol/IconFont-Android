@@ -8,23 +8,23 @@ import io.carlol.iconfont.fragment.abstracts.FontFragment;
  * @author c.luchessa
  *
  */
-public class FontStrokeFragment extends FontFragment {
-	public static final String TAG = FontStrokeFragment.class.getSimpleName();
+public class FontTypiconFragment extends FontFragment {
+	public static final String TAG = FontTypiconFragment.class.getSimpleName();
 
 
-	public static FontStrokeFragment newInstance() {
-		FontStrokeFragment frag = new FontStrokeFragment();
+	public static FontTypiconFragment newInstance() {
+		FontTypiconFragment frag = new FontTypiconFragment();
 		return frag;
 	}
 	
 	@Override
 	protected int getIconStringArrayResourceId() {
-		return R.array.stroke_icons;
+		return R.array.typeicon_icons;
 	}
 
 	@Override
 	protected int getIconLayoutResourceId() {
-		return R.layout.view_font_stroke;
+		return R.layout.view_font_typicon;
 	}
 
 	
