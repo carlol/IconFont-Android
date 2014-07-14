@@ -16,7 +16,7 @@ import android.widget.TextView;
 public class PagerFragment extends BaseSimpleFragment {
 	public static final String TAG = PagerFragment.class.getSimpleName();
 
-	private static final int NUM_PAGES = 3;
+	private static final int NUM_PAGES = 5;
 
 	private TextView mTitleView;
 	private ViewPager mViewPager;
@@ -63,6 +63,14 @@ public class PagerFragment extends BaseSimpleFragment {
 					titleResId = R.string.icon_page_title_typicon;
 					break;
 
+				case 3:
+					titleResId = R.string.icon_page_title_fontelico;
+					break;
+					
+				case 4:
+					titleResId = R.string.icon_page_title_elusive;
+					break;
+
 				default:
 					break;
 				}
@@ -103,7 +111,15 @@ public class PagerFragment extends BaseSimpleFragment {
 			case 2:
 				frag = FontTypiconFragment.newInstance();
 				break;
+				
+			case 3:
+				frag = FontFontelicoFragment.newInstance();
+				break;
 
+			case 4:
+				frag = FontElusiveFragment.newInstance();
+				break;
+				
 			default:
 				// impossible
 				break;

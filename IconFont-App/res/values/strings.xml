@@ -9,5 +9,7 @@
     <string name="icon_page_title_font_awesome">Font Awesome</string>
     <string name="icon_page_title_stroke">Stroke font</string>
     <string name="icon_page_title_typicon">Typicons font</string>
+    <string name="icon_page_title_fontelico">Fontelico font</string>
+    <string name="icon_page_title_elusive">Elusive font</string>
 
 </resources>
