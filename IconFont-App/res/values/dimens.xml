@@ -5,8 +5,10 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     
     <dimen name="icon_font_text_size">26dp</dimen>
-    <dimen name="icon_page_title_margin_bottom">5dp</dimen>
+    <dimen name="default_spacing">5dp</dimen>
     <dimen name="icon_page_title_text_size">20dp</dimen>
+    <dimen name="info_value_label_size">14dp</dimen>
+    <dimen name="info_value_text_size">16dp</dimen>
     <dimen name="actionbar_margin_left">10dp</dimen>
 
 </resources>

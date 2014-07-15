@@ -3,8 +3,10 @@ package io.carlol.iconfont.base;
 
 import io.carlol.iconfont.R;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.DialogFragment;
@@ -136,15 +138,15 @@ public abstract class BaseActivity extends ActionBarActivity implements Bridge {
 
 	@Override // @Bridge
 	public void hideProgressDialog() {
-//		DialogFragment dialogFragment = (DialogFragment)getSupportFragmentManager().findFragmentByTag(PROGRESS_TAG); 
-//		if (dialogFragment != null) { dialogFragment.dismissAllowingStateLoss(); }
+		//		DialogFragment dialogFragment = (DialogFragment)getSupportFragmentManager().findFragmentByTag(PROGRESS_TAG); 
+		//		if (dialogFragment != null) { dialogFragment.dismissAllowingStateLoss(); }
 	}
 
 	@Override // @Bridge
 	public void showProgressDialog() {
-//		FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-//		mProgressDialog = BaseProgressDialogFragment.newInstance();
-//		mProgressDialog.show(ft, PROGRESS_TAG);
+		//		FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+		//		mProgressDialog = BaseProgressDialogFragment.newInstance();
+		//		mProgressDialog.show(ft, PROGRESS_TAG);
 	}
 
 	@Override // @Bridge
@@ -180,10 +182,17 @@ public abstract class BaseActivity extends ActionBarActivity implements Bridge {
 					InputMethodManager.HIDE_NOT_ALWAYS);
 		}
 	}
-	
+
+	@Override
+	public void redirectTo(String url) {
+		Intent i = new Intent(Intent.ACTION_VIEW);
+		i.setData(Uri.parse(url));
+		startActivity(i);
+	}
+
 	@Override
 	public boolean isFirstOpening() {
 		return isFirstOpening;
 	}
-	
+
 }

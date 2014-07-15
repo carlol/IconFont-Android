@@ -28,6 +28,7 @@ public interface Bridge extends ActivityInterface {
 	public void unlockScreenOrientation();
 	public void closeKeyboard();
 	public boolean isFirstOpening();
+	public void redirectTo(String url);
 	
 	// Custom
 	public abstract <T extends ActivityInterface> T get( Class<T> clazz );

@@ -2,13 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
     android:orientation="vertical" >
 
     <TextView
         android:id="@+id/page_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/icon_page_title_margin_bottom"
+        android:layout_margin="@dimen/default_spacing"
         android:gravity="center"
         android:textSize="@dimen/icon_page_title_text_size" />
 
@@ -16,6 +17,74 @@
         android:layout_width="match_parent"
         android:layout_height="1px"
         android:background="@color/dark_grey" />
+
+    <LinearLayout
+        android:id="@+id/info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/default_spacing"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_spacing"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/default_spacing"
+                android:text="@string/author_label"
+                android:textColor="@color/light_grey"
+                android:textSize="@dimen/info_value_label_size" />
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/info_value_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_spacing"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/default_spacing"
+                android:text="@string/license_label"
+                android:textColor="@color/light_grey"
+                android:textSize="@dimen/info_value_label_size" />
+
+            <TextView
+                android:id="@+id/license"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/info_value_text_size" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_spacing"
+            android:text="@string/link_label"
+            android:textColor="@color/holo_blue_light"
+            android:textSize="@dimen/info_value_text_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/dark_grey" />
+    </LinearLayout>
 
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"

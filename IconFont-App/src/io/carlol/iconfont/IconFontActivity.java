@@ -6,8 +6,6 @@ import io.carlol.iconfont.constants.C;
 import io.carlol.iconfont.fragment.FontAwesomeFragment;
 import io.carlol.iconfont.fragment.FontStrokeFragment;
 import io.carlol.iconfont.fragment.PagerFragment;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -21,21 +19,21 @@ import android.widget.TextView;
  */
 public class IconFontActivity extends BaseActivity {
 	public static final String TAG = IconFontActivity.class.getSimpleName();
-	
-	
+
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
 		if ( this.isFirstOpening() ) {
-			
+
 			this.switchToSection(PagerFragment.TAG);
-			
+
 		}
-		
+
 		int titleId = getResources().getIdentifier("action_bar_title", "id", "android");
 		TextView titleTextView = (TextView) this.getActionBarView().findViewById(titleId);
-		
+
 		titleTextView.setPadding(
 				getResources().getDimensionPixelSize(R.dimen.actionbar_margin_left)
 				, 0 
@@ -55,13 +53,11 @@ public class IconFontActivity extends BaseActivity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		int id = item.getItemId();
-		
+
 		if (id == R.id.action_github) {
-			
-			Intent i = new Intent(Intent.ACTION_VIEW);
-			i.setData(Uri.parse(C.URL_GITHUB));
-			startActivity(i);
-			
+
+			redirectTo(C.URL_GITHUB);
+
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
@@ -74,13 +70,13 @@ public class IconFontActivity extends BaseActivity {
 
 		if ( FontAwesomeFragment.TAG.equals(sectionId) ) {
 			frag = FontAwesomeFragment.newInstance();
-			
+
 		} else if ( FontStrokeFragment.TAG.equals(sectionId) ) {
 			frag = FontStrokeFragment.newInstance();
-			
+
 		} if ( PagerFragment.TAG.equals(sectionId) ) {
 			frag = PagerFragment.newInstance();
-			
+
 		} 
 
 		if (frag == null) {
@@ -89,12 +85,11 @@ public class IconFontActivity extends BaseActivity {
 
 		this.performReplace(frag, sectionId, addToBackstack);
 	}
-	
-	public View getActionBarView() {
-	    View v = getWindow().getDecorView();
-	    int resId = getResources().getIdentifier("action_bar_container", "id", "android");
-	    return v.findViewById(resId);
-	}
 
+	public View getActionBarView() {
+		View v = getWindow().getDecorView();
+		int resId = getResources().getIdentifier("action_bar_container", "id", "android");
+		return v.findViewById(resId);
+	}
 
 }
