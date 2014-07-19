@@ -9,7 +9,6 @@ import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
 import android.view.inputmethod.InputMethodManager;
@@ -22,16 +21,15 @@ import android.widget.Toast;
  */
 public abstract class BaseActivity extends ActionBarActivity implements Bridge {
 
-	private static final int MAIN_LAYOUT = R.layout.lab_main;
+	protected static final int MAIN_LAYOUT = R.layout.lab_main;
 
-	private static final int SECTION_CONTAINER = R.id.fragment_container;
+	protected static final int SECTION_CONTAINER = R.id.fragment_container;
 
 	protected Handler mHandler;
 
 	private static boolean activityVisible;
-	private BaseFragment mCurrentSection;
-
-	protected DialogFragment mProgressDialog;
+	
+	protected BaseFragment mCurrentSection;
 
 	private boolean isFirstOpening;
 

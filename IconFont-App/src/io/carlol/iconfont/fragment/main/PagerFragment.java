@@ -171,6 +171,11 @@ public class PagerFragment extends BaseSimpleFragment {
 
 		mViewPager.setAdapter(new IconPagerAdapter(mChildFragmentManager));
 	}
+	
+	
+	public void switchToPage(int position) {
+		mViewPager.setCurrentItem(position, true);
+	}
 
 
 	/**

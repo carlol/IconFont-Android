@@ -17,8 +17,8 @@ public abstract class BaseDrawerActivity extends BaseActivity implements PanelIn
 	private static final int DRAWER_LAYOUT_RESOURCE_ID 	= R.id.drawer_layout;
 	private static final int DRAWER_CONTENT_RESOURCE_ID	= R.id.drawer_content;
 
-	private DrawerLayout mDrawerLayout;
-	private View mDrawerContent;
+	protected DrawerLayout mDrawerLayout;
+	protected View mDrawerContent;
 
 	private boolean onCloseMenuListenerExpiration;
 	private boolean onOpenMenuListenerExpiration;
