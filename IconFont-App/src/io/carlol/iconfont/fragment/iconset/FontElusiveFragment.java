@@ -1,4 +1,4 @@
-package io.carlol.iconfont.fragment;
+package io.carlol.iconfont.fragment.iconset;
 
 import io.carlol.iconfont.R;
 import io.carlol.iconfont.fragment.abstracts.FontFragment;

@@ -22,8 +22,6 @@ import android.widget.Toast;
  */
 public abstract class BaseActivity extends ActionBarActivity implements Bridge {
 
-	private static final String PROGRESS_TAG = "progress_dialog";
-
 	private static final int MAIN_LAYOUT = R.layout.lab_main;
 
 	private static final int SECTION_CONTAINER = R.id.fragment_container;

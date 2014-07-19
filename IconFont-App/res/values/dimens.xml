@@ -4,11 +4,16 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     
+    <dimen name="main_menu_item_padding">10dp</dimen>
+    <dimen name="main_menu_item_textSize">20dp</dimen>
+    
     <dimen name="icon_font_text_size">26dp</dimen>
     <dimen name="default_spacing">5dp</dimen>
     <dimen name="icon_page_title_text_size">20dp</dimen>
     <dimen name="info_value_label_size">14dp</dimen>
     <dimen name="info_value_text_size">16dp</dimen>
     <dimen name="actionbar_margin_left">10dp</dimen>
+    <dimen name="icon_page_title_side_icon_side_margin">5dp</dimen>
+    
 
 </resources>

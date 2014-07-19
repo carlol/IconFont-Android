@@ -1,8 +1,15 @@
-package io.carlol.iconfont.fragment;
+package io.carlol.iconfont.fragment.main;
 
+import io.carlol.iconfont.IconFontActivity;
 import io.carlol.iconfont.R;
 import io.carlol.iconfont.base.BaseSimpleFragment;
 import io.carlol.iconfont.constants.C;
+import io.carlol.iconfont.fragment.iconset.FontAwesomeFragment;
+import io.carlol.iconfont.fragment.iconset.FontElusiveFragment;
+import io.carlol.iconfont.fragment.iconset.FontFontelicoFragment;
+import io.carlol.iconfont.fragment.iconset.FontStrokeFragment;
+import io.carlol.iconfont.fragment.iconset.FontTypiconFragment;
+import io.carlol.iconfont.lib.ui.IconViewElusive;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -26,13 +33,15 @@ public class PagerFragment extends BaseSimpleFragment {
 	private TextView mLicenseTextView;
 	private TextView mAuthorTextView;
 	private View mLinkView;
+	private IconViewElusive mIconTitleLeft;
+	private IconViewElusive mIconTitleRight;
 
 
 	public static PagerFragment newInstance() {
 		PagerFragment frag = new PagerFragment();
 		return frag;
 	}
-
+	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		mContentView = inflater.inflate(R.layout.fragment_pager, null);
@@ -43,6 +52,9 @@ public class PagerFragment extends BaseSimpleFragment {
 		mAuthorTextView = (TextView) mContentView.findViewById(R.id.author);
 		mLinkView = mContentView.findViewById(R.id.link);
 		mViewPager = (ViewPager) mContentView.findViewById(R.id.pager);
+		
+		mIconTitleLeft = (IconViewElusive) mContentView.findViewById(R.id.icon_title_left);
+		mIconTitleRight = (IconViewElusive) mContentView.findViewById(R.id.icon_title_right);
 
 		return mContentView;
 	}
@@ -128,6 +140,9 @@ public class PagerFragment extends BaseSimpleFragment {
 						mBridge.redirectTo(_linkRedirectUrl);
 					}
 				});
+				
+				// update main menu selection
+				mBridge.get(IconFontActivity.class).selectMainMenuItem(position);
 			}
 
 			@Override
@@ -144,14 +159,17 @@ public class PagerFragment extends BaseSimpleFragment {
 			public void onClick(View v) {
 				if ( mInfoContainerView.getVisibility() == View.VISIBLE ) {
 					mInfoContainerView.setVisibility(View.GONE);
+					mIconTitleLeft.setIcon(R.id.el_icon_download);
+					mIconTitleRight.setIcon(R.id.el_icon_download);
 				} else {
 					mInfoContainerView.setVisibility(View.VISIBLE);
+					mIconTitleLeft.setIcon(R.id.el_icon_upload);
+					mIconTitleRight.setIcon(R.id.el_icon_upload);
 				}
 			}
 		});
 
 		mViewPager.setAdapter(new IconPagerAdapter(mChildFragmentManager));
-
 	}
 
 

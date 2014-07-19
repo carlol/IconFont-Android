@@ -1,15 +1,19 @@
 package io.carlol.iconfont;
 
-import io.carlol.iconfont.base.BaseActivity;
+import io.carlol.iconfont.base.BaseDrawerActivity;
 import io.carlol.iconfont.base.BaseFragment;
 import io.carlol.iconfont.constants.C;
-import io.carlol.iconfont.fragment.FontAwesomeFragment;
-import io.carlol.iconfont.fragment.FontStrokeFragment;
-import io.carlol.iconfont.fragment.PagerFragment;
+import io.carlol.iconfont.fragment.main.PagerFragment;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.CheckedTextView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 /**
@@ -17,9 +21,10 @@ import android.widget.TextView;
  * @author c.luchessa
  *
  */
-public class IconFontActivity extends BaseActivity {
+public class IconFontActivity extends BaseDrawerActivity {
 	public static final String TAG = IconFontActivity.class.getSimpleName();
 
+	private ListView mMenuList;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -40,8 +45,27 @@ public class IconFontActivity extends BaseActivity {
 				, 0 
 				, 0 
 				);
-	}
 
+		// init menu
+		mMenuList = (ListView) this.findViewById(R.id.drawer_content);
+		Resources res = getResources();
+		String[] menuLabelResIds = {
+			res.getString(R.string.icon_page_title_font_awesome)
+			, res.getString(R.string.icon_page_title_stroke)
+			, res.getString(R.string.icon_page_title_typicon)
+			, res.getString(R.string.icon_page_title_fontelico)
+			, res.getString(R.string.icon_page_title_elusive)
+		};
+		mMenuList.setAdapter(new ArrayAdapter<String>(this, R.layout.view_item_main_menu, menuLabelResIds));
+		mMenuList.setOnItemClickListener(new OnItemClickListener() {
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+				CheckedTextView cTV = (CheckedTextView) view;
+				cTV.setChecked(true);
+			}
+		});
+	}
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 
@@ -68,13 +92,7 @@ public class IconFontActivity extends BaseActivity {
 		BaseFragment frag = null;
 		boolean addToBackstack = false;
 
-		if ( FontAwesomeFragment.TAG.equals(sectionId) ) {
-			frag = FontAwesomeFragment.newInstance();
-
-		} else if ( FontStrokeFragment.TAG.equals(sectionId) ) {
-			frag = FontStrokeFragment.newInstance();
-
-		} if ( PagerFragment.TAG.equals(sectionId) ) {
+		if ( PagerFragment.TAG.equals(sectionId) ) {
 			frag = PagerFragment.newInstance();
 
 		} 
@@ -84,6 +102,10 @@ public class IconFontActivity extends BaseActivity {
 		}
 
 		this.performReplace(frag, sectionId, addToBackstack);
+	}
+	
+	public void selectMainMenuItem( int position ) {
+		mMenuList.setItemChecked(position, true);
 	}
 
 	public View getActionBarView() {
